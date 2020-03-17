@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://youngstar.cc/about/index.html</loc>
+    
+    <lastmod>2020-03-17T05:21:39.460Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://youngstar.cc/friends/index.html</loc>
     
     <lastmod>2020-02-26T08:07:03.750Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://youngstar.cc/contact/index.html</loc>
     
     <lastmod>2020-02-26T08:05:52.706Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://youngstar.cc/about/index.html</loc>
-    
-    <lastmod>2020-02-26T02:55:15.109Z</lastmod>
     
   </url>
   
