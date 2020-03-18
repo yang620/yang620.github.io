@@ -4,14 +4,13 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="开篇, Skill">
+    <meta name="keywords" content="三分钟教你数据动态可视化排名, Skill">
     <meta name="baidu-site-verification" content>
     <meta name="google-site-verification" content>
     <meta name="360-site-verification" content>
     <meta name="description" content="
 
-大一时曾开通过一段时间，由于个人能力有限，无法维护网站，作罢。后又拾起，辗转良久，bug不断，放弃云服务器，退而求其次，境外线路在github部署，境内线路在码云和coding同时部署，双重保障。这次既然百转千回，就要坚持，不负初心！
-">
+最近各大视频网站上都流行一种数据排名，是一种动态可视化的排名。看见着实很爽，再配上合适的BGM，那排名的上升或下降简直牵动着看客们的心。其实它很简单的，本篇博客就将给大家科普一下这种排名方法，我们不去探究它的算法构造，会用即可，保姆级教">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +18,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>开篇 | Yang&#39;s blog</title>
+    <title>三分钟教你数据动态可视化排名 | Yang&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -293,13 +292,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        开篇
+                        三分钟教你数据动态可视化排名
                     </div>
                 </div>
             </div>
@@ -410,8 +409,8 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/随笔/" target="_blank">
-                            <span class="chip bg-color">随笔</span>
+                        <a href="/tags/技术/" target="_blank">
+                            <span class="chip bg-color">技术</span>
                         </a>
                         
                     </div>
@@ -422,8 +421,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/随笔/" class="post-category" target="_blank">
-                            随笔
+                        <a href="/categories/技术/" class="post-category" target="_blank">
+                            技术
                         </a>
                         
                     </div>
@@ -434,7 +433,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-18
+                    2020-03-19
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -448,7 +447,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    613
+                    656
                 </div>
                 
 
@@ -471,32 +470,35 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <div align="middle"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=357312&auto=1&height=66"></iframe></div>
+                <div align="middle"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=357367&auto=1&height=66"></iframe></div>
 
-<p>大一时曾开通过一段时间，由于个人能力有限，无法维护网站，作罢。后又拾起，辗转良久，bug不断，放弃云服务器，退而求其次，境外线路在github部署，境内线路在码云和coding同时部署，双重保障。这次既然百转千回，就要坚持，不负初心！</p>
-<p>想跟大家分享一句冯唐的话：</p>
+<p>最近各大视频网站上都流行一种数据排名，是一种动态可视化的排名。看见着实很爽，再配上合适的BGM，那排名的上升或下降简直牵动着看客们的心。其实它很简单的，本篇博客就将给大家科普一下这种排名方法，我们不去探究它的算法构造，会用即可，保姆级教学。</p>
+<p><img src="1.jpg" alt></p>
+<p>首先大家可以看一下这种排名的视频效果: <a href="https://www.bilibili.com/video/av53872265?from=search&seid=12515022537062159281" title="show effect" target="_blank" rel="noopener">点击此处查看</a>。 </p>
+<p>多图预警！！！</p>
+<h1 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h1><hr>
+<p>我们要用到以下三个网站：</p>
 <blockquote>
-<p>敢于开始，必须坚持，忘掉胜负，享受成长，没有终极。</p>
+<p>世界银行数据平台 <a href="https://data.worldbank.org.cn" target="_blank" rel="noopener">https://data.worldbank.org.cn</a> 这个网站可以免费获取世界各国家的发展数据。<br> Flourish <a href="https://flourish.studio" target="_blank" rel="noopener">https://flourish.studio</a> 此网站可以实现数据的可视化，支持上传数据，只需做一些简单的调整。<br> Countryflags <a href="https://www.countryflags.io/" target="_blank" rel="noopener">https://www.countryflags.io/</a> 此网站有各个国家的国旗，可以获取国旗图片的url。</p>
 </blockquote>
-<h1 id="与2020有言"><a href="#与2020有言" class="headerlink" title="与2020有言"></a>与2020有言</h1><hr>
-<p><strong>第一件事</strong>就是，这一年还没有过多久，可国家却遭受了巨大的灾祸，新冠病毒在全国甚至全世界蔓延，这段时间股市不振，经济上也遭受很大的损失。我在武汉上学，也已经一年半多了，对武汉有了深厚的感情，清晨浓香的热干面，三四月飘飞的樱花，长江汹汹而过，百个湖泊装饰整座大武汉，在这里由衷地想说一句：<strong>武汉加油！</strong><br><img src="wuhan.jpg" alt><br><strong>第二件事</strong>我个人在2020之初，内心也经受了很大波折，感情上有了一段小插曲，所幸，辗转之后，人还是那个人，物也还是那些物，我们都成长啦！<br>此处引用我的一句诗hh：</p>
+<h2 id="获取数据"><a href="#获取数据" class="headerlink" title="获取数据"></a>获取数据</h2><p><strong>第一步</strong>，我们进入世界银行数据平台，搜索GDP：<br><img src="2.jpg" alt></p>
+<p><strong>第二步</strong>，点击下载数据。<br><img src="3.jpg" alt></p>
+<h2 id="数据处理：（下面是我处理好的）"><a href="#数据处理：（下面是我处理好的）" class="headerlink" title="数据处理：（下面是我处理好的）"></a>数据处理：（下面是我处理好的）</h2><p><strong>第一步</strong>，打开Data页，删去无用的行和列。<br><img src="4.jpg" alt></p>
+<p><strong>第二步</strong>，对2018年的数据进行降序排列。<br><img src="5.jpg" alt></p>
+<p><strong>第三步</strong>，更改数据的格式，设置为下图：<br><img src="6.jpg" alt></p>
+<p><strong>第四步</strong>，删去一些非单独国家的地区的行，如南亚，欧洲联盟等等，还有记得保存！</p>
+<h2 id="数据可视化"><a href="#数据可视化" class="headerlink" title="数据可视化"></a>数据可视化</h2><p><strong>第一步</strong>，打开Flourish网站，可以直接用Google账号注册，没有的小伙伴可以自己按步骤注册。<br><img src="7.jpg" alt></p>
+<p><strong>第二步</strong>，新建可视化：<br><img src="8.jpg" alt><br><img src="9.jpg" alt></p>
+<p><strong>第三步</strong>，更换数据与简单调整：<br><img src="10.jpg" alt><br><img src="11.jpg" alt></p>
+<p>接下来有4步操作：<br><img src="12.jpg" alt></p>
+<p>为下步添加国旗准备：<br><img src="13.jpg" alt></p>
+<h2 id="添加国旗"><a href="#添加国旗" class="headerlink" title="添加国旗"></a>添加国旗</h2><p><strong>第一步</strong>，进入国旗网站，找到美国，鼠标右键在新标签页打开，复制地址。<br><img src="14.jpg" alt><br><img src="15.jpg" alt></p>
+<p><strong>第二步</strong>，把复制的地址粘贴到flag下，别的国家可以直接改英文简称，事实上，最后只能同时显示十个国家，我们可以先添加十几个国家，添加方法同理，再Preview一下动态排名中是否有国家没有国旗即可。<br><img src="16.jpg" alt><br><img src="17.jpg" alt></p>
+<h1 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h1><hr>
+<p>我们至此就完成啦哈哈，是不是很简单呀！我们可以点击左上角全屏看一下效果，同时还可以录屏，再添加一段史诗般的BGM，这里推荐victory这首曲子，wow，会十分震撼的！<br><img src="18.jpg" alt></p>
+<p>希望大家可以多多指正，共同进步！附一首冯唐小偈作结：</p>
 <blockquote>
-<p>风吹是你，雨落是你，风里雨里都是你。</p>
-</blockquote>
-<p><strong>第三件事</strong>希望今年里，大家都平平安安，生活过得稳当，过得顺利。</p>
-<h1 id="介绍一下我博客的用途"><a href="#介绍一下我博客的用途" class="headerlink" title="介绍一下我博客的用途"></a>介绍一下我博客的用途</h1><hr>
-<p>别看我长得像杀猪的，其实我是学计算机的。今后的职业大概率是码农，职业理想是成为一个优秀的码农。这个过程，是我的成长之路，期间会碰到牛鬼蛇神般的bug，也会接触到超越我想象力的一些项目，我愿将这些与大家分享。</p>
-<p>除此之外，我也会把一些常用的包括但不仅限于IT方面的知识跟大家交流，互相学习，也欢迎大家对我的不足之处给出建议。我偶尔也会把一些生活经历和感悟，与大家分享。当然，还是以技术博客为主。<br><img src="2.jpg" alt></p>
-<p>此处总结一下我的博客用处：</p>
-<ul>
-<li>科普</li>
-<li>交流解决bug方法</li>
-<li>交流项目经验</li>
-<li>生活经历与感悟</li>
-</ul>
-<p>最后，我想用心经里的小偈作结：</p>
-<blockquote>
-<p>心无挂碍，无挂碍故，<br>无有恐怖，远离颠倒梦想。</p>
+<p>春水初生，春林初盛<br> 春风十里不如你</p>
 </blockquote>
 
             </div>
@@ -656,9 +658,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《开篇》
+                    《三分钟教你数据动态可视化排名》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/03/18/start/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/03/19/data-ranking-visualisation/" property="cc:attributionName"
                rel="cc:attributionURL">
                 youngstar
             </a> 采用
@@ -699,7 +701,7 @@
         repo: 'yang620.github.io',
         owner: 'yang620',
         admin: "yang620",
-        id: '2020/03/18/start/',
+        id: '2020/03/19/data-ranking-visualisation/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -982,9 +984,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/03/19/data-ranking-visualisation/">
                     <div class="card-image">
@@ -1002,9 +1005,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-19
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-19
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -1017,6 +1020,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1032,7 +1036,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2020/03/18/start/">
@@ -1066,7 +1070,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
