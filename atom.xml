@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Yang&#39;s blog</title>
+  
+  <subtitle>Youngstar</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://youngstar.cc/"/>
+  <updated>2020-03-19T01:53:10.731Z</updated>
+  <id>https://youngstar.cc/</id>
+  
+  <author>
+    <name>youngstar</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>三分钟教你数据动态可视化排名</title>
+    <link href="https://youngstar.cc/2020/03/19/data-ranking-visualisation/"/>
+    <id>https://youngstar.cc/2020/03/19/data-ranking-visualisation/</id>
+    <published>2020-03-18T17:27:18.000Z</published>
+    <updated>2020-03-19T01:53:10.731Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;div align=&quot;middle&quot;&gt;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="https://youngstar.cc/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="技术" scheme="https://youngstar.cc/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开篇</title>
+    <link href="https://youngstar.cc/2020/03/18/start/"/>
+    <id>https://youngstar.cc/2020/03/18/start/</id>
+    <published>2020-03-18T04:17:01.000Z</published>
+    <updated>2020-03-18T06:49:53.054Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;div align=&quot;middle&quot;&gt;&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;330&quot; height=&quot;86&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://youngstar.cc/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="随笔" scheme="https://youngstar.cc/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+</feed>
